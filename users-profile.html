@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Profile</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/drill.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('bg1.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+
+  <div class="d-flex align-items-center justify-content-between">
+    <a href="index.php" class="logo d-flex align-items-center">
+      <span class="d-none d-lg-block">Machine Monitor</span>
+    </a>
+    <i class="bi bi-list toggle-sidebar-btn"></i>
+  </div><!-- End Logo -->
+
+  <div class="search-bar">
+    <form class="search-form d-flex align-items-center" method="POST" action="pages-error-404.html">
+      <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+      <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+    </form>
+  </div><!-- End Search Bar --> 
+
+  <nav class="header-nav ms-auto">
+    <ul class="d-flex align-items-center">
+
+      <li class="nav-item d-block d-lg-none">
+        <a class="nav-link nav-icon search-bar-toggle " href="#">
+          <i class="bi bi-search"></i>
+        </a>
+      </li><!-- End Search Icon-->
+      <li class="nav-item dropdown pe-3">
+    </ul>
+  </nav><!-- End Icons Navigation -->
+</header><!-- End Header -->
+
+
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+  <ul class="sidebar-nav" id="sidebar-nav">
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="index.php">
+        <i class="bi bi-grid"></i>
+        <span>Dashboard</span>
+      </a>
+    </li><!-- End Dashboard Nav -->      
+    <li class="nav-item">
+      <a class="nav-link " data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="charts-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+        <li>
+          <a href="charts-chartjs.php" class="active">
+            <i class="bi bi-circle"></i><span>Chart.js</span>
+          </a>
+        </li>
+    
+    <li class="nav-heading">Pages</li>
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="users-profile.html">
+        <i class="bi bi-person"></i>
+        <span>Developers Profile</span>
+      </a>
+    </li><!-- End Profile Page Nav -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="pages-register.html">
+        <i class="bi bi-card-list"></i>
+        <span>Register</span>
+      </a>
+    </li><!-- End Register Page Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="pages-login.html">
+        <i class="bi bi-box-arrow-in-right"></i>
+        <span>Login</span>
+      </a>
+    </li><!-- End Login Page Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="pages-error-404.html">
+        <i class="bi bi-dash-circle"></i>
+        <span>Error 404</span>
+      </a>
+    </li><!-- End Error 404 Page Nav -->
+  </ul>
+</aside>
+
+<!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Profile</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+          <li class="breadcrumb-item">Users</li>
+          <li class="breadcrumb-item active">Profile</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section profile">
+      <div class="row">
+        <div class="col-xl-8">
+          <div class="card">
+            <div class="card-body pt-3">
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
+
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Member 1</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Member 2</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Member 3</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Member 4</button>
+                </li>
+
+              </ul>
+      <!-- mem 1         -->
+              <div class="tab-content pt-2">
+                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                  <h5 class="card-title">About</h5>
+                  <p class="small fst-italic">mem1</p>
+
+                  <h5 class="card-title">Profile Details</h5>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label ">Full Name</div>
+                    <div class="col-lg-9 col-md-8">mem1</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Company</div>
+                    <div class="col-lg-9 col-md-8">mem1</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Job</div>
+                    <div class="col-lg-9 col-md-8">mem1</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Country</div>
+                    <div class="col-lg-9 col-md-8">mem1</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Address</div>
+                    <div class="col-lg-9 col-md-8">mem1</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Phone</div>
+                    <div class="col-lg-9 col-md-8">(436) 111-3538 x29071</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Email</div>
+                    <div class="col-lg-9 col-md-8">mem1@example.com</div>
+                  </div>
+
+              </div>
+        <!-- mem 2 -->
+              <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+                  <div class="tab-content pt-2">
+                    <div class="tab-pane fade show active profile-overview" id="profile-edit">
+                      <h5 class="card-title">About</h5>
+                      <p class="small fst-italic">mem2</p>    
+                      <h5 class="card-title">Profile Details</h5>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label ">Full Name</div>
+                        <div class="col-lg-9 col-md-8">mem2</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Company</div>
+                        <div class="col-lg-9 col-md-8">mem2</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Job</div>
+                        <div class="col-lg-9 col-md-8">mem2</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Country</div>
+                        <div class="col-lg-9 col-md-8">mem2</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Address</div>
+                        <div class="col-lg-9 col-md-8">mem2</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Phone</div>
+                        <div class="col-lg-9 col-md-8">(436) 222-3538 x29071</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Email</div>
+                        <div class="col-lg-9 col-md-8">mem2@example.com</div>
+                      </div>    
+                    </div>
+                  </div>
+                </div>
+        <!-- mem 3 -->
+              <div class="tab-pane fade profile-edit pt-3" id="profile-settings">
+                  <div class="tab-content pt-2">
+                    <div class="tab-pane fade show active profile-overview" id="profile-settings">
+                      <h5 class="card-title">About</h5>
+                      <p class="small fst-italic">mem3</p>    
+                      <h5 class="card-title">Profile Details</h5>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label ">Full Name</div>
+                        <div class="col-lg-9 col-md-8">mem3</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Company</div>
+                        <div class="col-lg-9 col-md-8">mem3</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Job</div>
+                        <div class="col-lg-9 col-md-8">mem3</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Country</div>
+                        <div class="col-lg-9 col-md-8">mem3</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Address</div>
+                        <div class="col-lg-9 col-md-8">mem3</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Phone</div>
+                        <div class="col-lg-9 col-md-8">(436) 333-3538 x29071</div>
+                      </div>    
+                      <div class="row">
+                        <div class="col-lg-3 col-md-4 label">Email</div>
+                        <div class="col-lg-9 col-md-8">mem3@example.com</div>
+                      </div>    
+                    </div>
+                  </div>
+                </div>
+            <!-- mem 4 -->
+            <div class="tab-pane fade profile-edit pt-3" id="profile-change-password">
+              <div class="tab-content pt-2">
+                <div class="tab-pane fade show active profile-overview" id="profile-change-password">
+                  <h5 class="card-title">About</h5>
+                  <p class="small fst-italic">mem4</p>    
+                  <h5 class="card-title">Profile Details</h5>    
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label ">Full Name</div>
+                    <div class="col-lg-9 col-md-8">mem4</div>
+                  </div>    
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Company</div>
+                    <div class="col-lg-9 col-md-8">mem4</div>
+                  </div>    
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Job</div>
+                    <div class="col-lg-9 col-md-8">mem4</div>
+                  </div>    
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Country</div>
+                    <div class="col-lg-9 col-md-8">mem4</div>
+                  </div>    
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Address</div>
+                    <div class="col-lg-9 col-md-8">mem4</div>
+                  </div>    
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Phone</div>
+                    <div class="col-lg-9 col-md-8">(436) 444-3538 x29071</div>
+                  </div>    
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Email</div>
+                    <div class="col-lg-9 col-md-8">mem4@example.com</div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+<footer id="footer" class="footer" style="color: white;">
+  <div class="copyright"><strong><span>Machine Monitor</span></strong>. All Rights Reserved</div>
+</footer>
+<!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
